@@ -8,9 +8,9 @@ entertainments = ["See Walt Disneys' apartment", "Visit Hawaii Volcano National 
 
 print("Hello, allow me to generate a random Day Trip for you")
 
-def make_a_decision(destinations, restraunts, transportations, enteratinments):
-    first_decision = destinations + restraunts + transportations + enteratinments
-    if first_decision == True:
+def make_a_decision(trip_one, trip_two):
+    first_decision = trip_one
+    if first_decision == trip_two:
         print(random.choice(destinations))
         print(random.choice(restraunts))
         print(random.choice(transportations))
