@@ -10,11 +10,18 @@ print("Hello, allow me to generate a random Day Trip for you")
 
 def make_a_decision(destinations, restraunts, transportations, entertainments):
     day_trip = destinations + restraunts + transportations + entertainments
+    user_yes = "Yes"
+    no_way = "No"
     print(random.choice(destinations))
+
     print(random.choice(restraunts))
     print(random.choice(transportations))
     print(random.choice(entertainments))
-    return day_trip
+    input("Do you like this trip, or would you like to change something? Yes or No? ")
+    if day_trip == user_yes:
+        print("Great, you'll enjoy what's planned!")
+
+        return day_trip
     
 result_from_user = make_a_decision(destinations, restraunts, transportations, entertainments)
     
