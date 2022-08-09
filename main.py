@@ -1,26 +1,28 @@
 import random
 
-print("Hello, allow me to generate a random Day Trip for you")
-
-destinations = ["Disney Land", "Hawaii", "New Zeland", "Hershey Park"]
-restraunts = ["Docking Bay 7 Food and Cargo","Itchy Butt(Chicken Joy)", "The Shed te Motu", "The Chocolate Avenue Grill"]
-trasnsportations = ["Bus", "Cruise", "Plane", "RV"]
-entertainments = ["See Walt Disneys' apartment", "Visit Hawaii Volcano National Park", "Hobbit movie set tour", "Hershey Park Kissing Tower"]
 
 
 def make_a_decision(favorite_spot, fine_dinning, no_fighting, that_was_fun):
+    destinations = ["Disney Land", "Hawaii", "New Zeland", "Hershey Park"]
+    restraunts = ["Docking Bay 7 Food and Cargo","Itchy Butt(Chicken Joy)", "The Shed te Motu", "The Chocolate Avenue Grill"]
+    trasnsportations = ["Bus", "Cruise", "Plane", "RV"]
+    entertainments = ["See Walt Disneys' apartment", "Visit Hawaii Volcano National Park", "Hobbit movie set tour", "Hershey Park Kissing Tower"]
     result_journey = favorite_spot + fine_dinning + no_fighting + that_was_fun
-    favorite_spot = random.choice(restraunts)
-    fine_dinning = random.choice(restraunts)
-    no_fighting = random.choice(trasnsportations)
-    that_was_fun = random.choice(entertainments)
+    result_journey == user_input
+    user_input = True
+    print("Hello, allow me to generate a random Day Trip for you")
     print(random.choice(destinations))
     print(random.choice(restraunts))
     print(random.choice(trasnsportations))
     print(random.choice(entertainments))
-    return result_journey
+        # fine_dinning = random.choice(restraunts)
+    # no_fighting = random.choice(trasnsportations)
+    # that_was_fun = random.choice(entertainments)
+    # return result_journey
+    
+    # make_a_decision()
 
-# make_a_decision()
+
 # input("Would you want to confirm or change these choices? ")
 # user_input = sounds_great = "Confirm"
 # print(sounds_great)
