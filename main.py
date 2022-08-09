@@ -19,9 +19,9 @@ def make_a_decision(destinations, restraunts, transportations, entertainments):
     print(random.choice(entertainments))
     input("Do you like this trip, or would you like to change something? Yes or No? ")
     # while user_yes in make_a_decision == True:
-    if (no_way):
+    if(no_way) == day_trip:
             print("Great, you'll enjoy what's planned!")
-    elif user_yes == True:
+    elif user_yes == day_trip:
             print("What would you like to change?")
 
             return day_trip
