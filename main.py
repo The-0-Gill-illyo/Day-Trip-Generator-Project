@@ -7,30 +7,34 @@ restraunts = ["Docking Bay 7 Food and Cargo","Itchy Butt(Chicken Joy)", "The She
 trasnsportations = ["Bus", "Cruise", "Plane", "RV"]
 entertainments = ["See Walt Disneys' apartment", "Visit Hawaii Volcano National Park", "Hobbit movie set tour", "Hershey Park Kissing Tower"]
 
-favorite_spot = random.choice(restraunts)
-fine_dinning = random.choice(restraunts)
-no_fighting = random.choice(trasnsportations)
-that_was_fun = random.choice(entertainments)
 
-print(random.choice(destinations))
-print(random.choice(restraunts))
-print(random.choice(trasnsportations))
-print(random.choice(entertainments))
+def make_a_decision(favorite_spot, fine_dinning, no_fighting, that_was_fun):
+    result_journey = favorite_spot + fine_dinning + no_fighting + that_was_fun
+    favorite_spot = random.choice(restraunts)
+    fine_dinning = random.choice(restraunts)
+    no_fighting = random.choice(trasnsportations)
+    that_was_fun = random.choice(entertainments)
+    print(random.choice(destinations))
+    print(random.choice(restraunts))
+    print(random.choice(trasnsportations))
+    print(random.choice(entertainments))
+    return result_journey
 
-input("Would you want to confirm or change these choices? ")
-user_input = sounds_great = "Confirm"
-print(sounds_great)
-user_input = change_something = "Change something"
-print(random.choice(destinations))
-print(random.choice(restraunts))
-print(random.choice(trasnsportations))
-print(random.choice(entertainments))
+# make_a_decision()
+# input("Would you want to confirm or change these choices? ")
+# user_input = sounds_great = "Confirm"
+# print(sounds_great)
+# user_input = change_something = "Change something"
+# print(random.choice(destinations))
+# print(random.choice(restraunts))
+# print(random.choice(trasnsportations))
+# print(random.choice(entertainments))
 
-def make_a_decision(favorite_trip_selection, pick_something_different):
-    return user_input
-print(change_something)
+# def make_a_decision(favorite_spot, fine_dinning, no_fighting, that_was_fun):
+#     result_journey = favorite_spot + fine_dinning + no_fighting + that_was_fun
+#     return result_journey
 
-user_input()
+
 
 # change_something == True
 # print(destinations = random.choice(destinations))
