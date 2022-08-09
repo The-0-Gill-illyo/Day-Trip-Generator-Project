@@ -1,26 +1,27 @@
 import random
 
 
+destinations = ["Disney Land", "Hawaii", "New Zeland", "Hershey Park"]
+restraunts = ["Docking Bay 7 Food and Cargo","Itchy Butt(Chicken Joy)", "The Shed te Motu", "The Chocolate Avenue Grill"]
+transportations = ["Bus", "Cruise", "Plane", "RV"]
+entertainments = ["See Walt Disneys' apartment", "Visit Hawaii Volcano National Park", "Hobbit movie set tour", "Hershey Park Kissing Tower"]
 
-def make_a_decision(favorite_spot, fine_dinning, no_fighting, that_was_fun):
-    destinations = ["Disney Land", "Hawaii", "New Zeland", "Hershey Park"]
-    restraunts = ["Docking Bay 7 Food and Cargo","Itchy Butt(Chicken Joy)", "The Shed te Motu", "The Chocolate Avenue Grill"]
-    trasnsportations = ["Bus", "Cruise", "Plane", "RV"]
-    entertainments = ["See Walt Disneys' apartment", "Visit Hawaii Volcano National Park", "Hobbit movie set tour", "Hershey Park Kissing Tower"]
-    result_journey = favorite_spot + fine_dinning + no_fighting + that_was_fun
-    result_journey == user_input
-    user_input = True
+
+def make_a_decision(destinations, restraunts, transportations, enteratinments):
+    first_decision == destinations + restraunts + transportations + enteratinments
+    first_decision = True
     print("Hello, allow me to generate a random Day Trip for you")
-    print(random.choice(destinations))
-    print(random.choice(restraunts))
-    print(random.choice(trasnsportations))
-    print(random.choice(entertainments))
-        # fine_dinning = random.choice(restraunts)
+    if make_a_decision == first_decision:
+        print(random.choice(destinations))
+        print(random.choice(restraunts))
+        print(random.choice(transportations))
+        print(random.choice(entertainments))
+    return make_a_decision()
+            # fine_dinning = random.choice(restraunts)
     # no_fighting = random.choice(trasnsportations)
     # that_was_fun = random.choice(entertainments)
     # return result_journey
     
-    # make_a_decision()
 
 
 # input("Would you want to confirm or change these choices? ")
