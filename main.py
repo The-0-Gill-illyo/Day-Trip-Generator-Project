@@ -18,14 +18,15 @@ def make_a_decision(destinations, restraunts, transportations, entertainments):
     print(random.choice(transportations))
     print(random.choice(entertainments))
     input("Do you like this trip, or would you like to change something? Yes or No? ")
-    if user_yes != no_way:
-        print("Great, you'll enjoy what's planned!")
-    elif no_way == True:
-        print("What would you like to change?")
+    while user_yes in make_a_decision == True:
+        if (no_way):
+            print("Great, you'll enjoy what's planned!")
+        elif no_way == True:
+            print("What would you like to change?")
 
-        return day_trip
+            return day_trip
     
-result_from_user = make_a_decision(destinations, restraunts, transportations, entertainments)
+    result_from_user = make_a_decision(destinations, restraunts, transportations, entertainments)
     
     
     
