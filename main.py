@@ -6,17 +6,16 @@ restraunts = ["Docking Bay 7 Food and Cargo","Itchy Butt(Chicken Joy)", "The She
 transportations = ["Bus", "Cruise", "Plane", "RV"]
 entertainments = ["See Walt Disneys' apartment", "Visit Hawaii Volcano National Park", "Hobbit movie set tour", "Hershey Park Kissing Tower"]
 
+print("Hello, allow me to generate a random Day Trip for you")
 
 def make_a_decision(destinations, restraunts, transportations, enteratinments):
-    first_decision == destinations + restraunts + transportations + enteratinments
-    first_decision = True
-    print("Hello, allow me to generate a random Day Trip for you")
-    if make_a_decision == first_decision:
+    first_decision = destinations + restraunts + transportations + enteratinments
+    if first_decision == True:
         print(random.choice(destinations))
         print(random.choice(restraunts))
         print(random.choice(transportations))
         print(random.choice(entertainments))
-    return make_a_decision()
+    return first_decision()
             # fine_dinning = random.choice(restraunts)
     # no_fighting = random.choice(trasnsportations)
     # that_was_fun = random.choice(entertainments)
